@@ -1,0 +1,1884 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="https://vanhackblobstorageprod.blob.core.windows.net/img/favicon.png">
+    <title>Event App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="event.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navBar">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:void(0)" style="color: gray; font-weight: bold;">
+                    <!-- <img src="logo.png" alt="Logo" class="sc-EHOje fNDaPb"> -->
+                    Site Logo
+                </a>
+                <!--<div class="eventApp">| Events</div>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#meetUpNav">MeetUp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#leapNav">Leap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#rMissionNav">Recruiting Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#vanHackNav">VanHackathon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#webinarNav">Webinar</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="clear"></div>
+    <div class="wrapper">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators myCarousel">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner topEvents">
+                <div class="carousel-item active">
+                    <img class="first-slide" src="banner1.jpg" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h2>Event Name1</h2>
+                            <p>
+                                June 28, 5:00 PM<br />
+                                Oakham House, Toronto‎-Cananda
+
+                            </p>
+                            <p><a class="btn btn-primary" href="#myCarousel" role="button" data-toggle="modal" data-target="#eventDetails">More Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide" src="banner1.jpg" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h2>Event Name2</h2>
+                            <p>
+                                June 28, 5:00 PM<br />
+                                Oakham House, Toronto‎-Cananda
+
+                            </p>
+                            <p><a class="btn btn-primary" href="#myCarousel" role="button" data-toggle="modal" data-target="#eventDetails">More Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="banner1.jpg" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h2>Event Name3</h2>
+                            <p>
+                                June 28, 5:00 PM<br />
+                                Oakham House, Toronto‎-Cananda
+
+                            </p>
+                            <p><a class="btn btn-primary" href="#myCarousel" role="button" data-toggle="modal" data-target="#eventDetails">More Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="fourth-slide" src="banner1.jpg" alt="fourth slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h2>Event Name4</h2>
+                            <p>
+                                June 28, 5:00 PM<br />
+                                Oakham House, Toronto‎-Cananda
+
+                            </p>
+                            <p><a class="btn btn-primary" href="#myCarousel" role="button" data-toggle="modal" data-target="#eventDetails">More Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="fourth-slide" src="banner1.jpg" alt="fifth slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h2>Webinar</h2>
+                            <p>
+                                June 28, 5:00 PM<br />
+                                Toronto‎-Cananda
+                            </p>
+                            <p><a class="btn btn-primary" href="#myCarousel" role="button" data-toggle="modal" data-target="#eventDetails">More Details</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="container">
+        <div class="row">
+            <div class="container my-4">
+                <div id="meetUp" class="carousel slide carousel-multi-item events" data-ride="carousel">
+                    <div class="space" id="meetUpNav"></div>
+                    <div class="eventHeading">Meet Up</div>
+                    <div class="controls-top">
+                        <a href="#meetUp" data-slide="prev" class="btn disabled" onclick="prevSlide(this);" id="prevMeetUp">&laquo; Previous</a>
+                        <a href="#meetUp" data-slide="next" class="btn btn-primary" onclick="nextSlide(this);" id="nextMeetUp">Next &raquo;</a>
+                    </div>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Meetup.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toronto Meetup</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Third slide-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="container my-4">
+                <div id="leap" class="carousel slide carousel-multi-item events" data-ride="carousel">
+                    <div class="space" id="leapNav"></div>
+                    <div class="eventHeading">Leap</div>
+                    <div class="controls-top">
+                        <a href="#leap" data-slide="prev" class="btn disabled" onclick="prevSlide(this);" id="prevLeap">&laquo; Previous</a>
+                        <a href="#leap" data-slide="next" class="btn btn-primary" onclick="nextSlide(this);" id="nextLeap">Next &raquo;</a>
+                    </div>
+
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="Leap.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Leap 2X</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Third slide-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="container my-4">
+                <div id="rMisson" class="carousel slide carousel-multi-item events" data-ride="carousel">
+                    <div class="space" id="rMissionNav"></div>
+                    <div class="eventHeading">Recruiting Mission</div>
+                    <div class="controls-top">
+                        <a href="#rMisson" data-slide="prev" class="btn disabled" onclick="prevSlide(this);" id="prevRMisson">&laquo; Previous</a>
+                        <a href="#rMisson" data-slide="next" class="btn btn-primary" onclick="nextSlide(this);" id="nextRMisson">Next &raquo;</a>
+                    </div>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="RMission.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Recruiting Mission</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Third slide-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="container my-4">
+                <div id="vanHack" class="carousel slide carousel-multi-item events" data-ride="carousel">
+                    <div class="space" id="vanHackNav"></div>
+                    <div class="eventHeading">VanHackathon</div>
+                    <div class="controls-top">
+                        <a href="#vanHack" data-slide="prev" class="btn disabled" onclick="prevSlide(this);" id="prevVanHack">&laquo; Previous</a>
+                        <a href="#vanHack" data-slide="next" class="btn btn-primary" onclick="nextSlide(this);" id="nextVanHack">Next &raquo;</a>
+                    </div>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="vanhackathon.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">VanHackathon</h4>
+                                            <p class="card-text">
+                                                LOREM IPSUM LOREM IPSUM LOREM
+                                                LOREM IPSUM....
+                                            </p>
+                                            <p style="line-height:28px">
+
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Apply</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Third slide-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="container my-4">
+                <div id="webinar" class="carousel slide carousel-multi-item events" data-ride="carousel">
+                    <div class="space" id="webinarNav"></div>
+                    <div class="eventHeading">Webinar</div>
+                    <div class="controls-top">
+                        <a href="#webinar" data-slide="prev" class="btn disabled" onclick="prevSlide(this);" id="prevWebinar">&laquo; Previous</a>
+                        <a href="#webinar" data-slide="next" class="btn btn-primary" onclick="nextSlide(this);" id="nextWebinar">Next &raquo;</a>
+                    </div>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2 premium">
+                                        <div class="premiumTag">PREMIUM</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPremium">Book Your Seat</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2 free">
+                                        <div class="freeTag">OPEN ONLY</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Book Your Seat</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2 premium">
+                                        <div class="premiumTag">PREMIUM</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPremium">Book Your Seat</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2 free">
+                                        <div class="freeTag">OPEN ONLY</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Book Your Seat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-2 premium">
+                                        <div class="premiumTag">PREMIUM</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPremium">Book Your Seat</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2 free">
+                                        <div class="freeTag">OPEN ONLY</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Book Your Seat</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2 premium">
+                                        <div class="premiumTag">PREMIUM</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPremium">Book Your Seat</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="card mb-2 free">
+                                        <div class="freeTag">OPEN ONLY</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Have expert review you VanHack Profile</h4>
+                                            <p class="card-text">
+                                                All improvement directly translate to your resume and Likedin Profile....
+                                            </p>
+                                            <p>
+                                                <img src="presenter.png" /> <label>Presenter Name</label><br />
+
+                                            </p>
+                                            <p style="line-height:28px">
+                                                <img src="location.png" /> Oakham House, Toronto‎-Cananda
+                                                <br />
+                                                <img src="calendar.png" /> &nbsp; Sat, June 27, 7:00 PM
+                                                <br />
+                                                <img src="User.png" /> &nbsp; 1053 Applied
+                                            </p>
+                                            <div class="btn-right">
+                                                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#eventDetails">See Details</button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyEventPopUp">Book Your Seat</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer>
+        <img src="footer.jpg" width="100%" />
+    </footer>
+    <div class="modal fade" id="socialMedia">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <!--<div class="modal-header">
+                    <h5 class="modal-title">Event Name: Toronto Meetup</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>-->
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="applyEventPremium">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <!--<div class="modal-header">
+                    <h5 class="modal-title">Event Name: Toronto Meetup</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>-->
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <!--<img src="RedCross.png" /><br />-->
+                    <b style="color:red">Hey you need a premium acount or buy a membership account to attend this webinar!!! </b><br /><br />
+                    Please click on the button below for more details.<br /><br />
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#premDetails">More Details</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#buyPremPopUp">Buy Premium</button>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="applyEventPopUp">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Event Name: Toronto Meetup</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="GreenTick.png" /><br />
+                    <b>You applied successfully!</b><br />
+                    Everything well in your application.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="eventDetails">
+        <div class="modal-dialog modal-dialog-centered" id="eventDetailsSize">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h6 class="modal-title">Event Name: Toronto Meetup</h6>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body" style="text-align:left">
+                    <img src="Meetup_Details.png" width="70%" />
+                    <div class="eventDetails">
+                        <img src="location.png" /> &nbsp; Oakham House - Cananda<br /><br />
+                        <img src="calendar.png" /> &nbsp; 27 Jun 2020 <br /><br />
+                        <img src="timer.png" /> &nbsp; 07:00 PM <br /><br />
+                        <img src="User.png" /> &nbsp; 1053 Applied
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+                <div style="width:98%">
+                    <div class="eventDescription">
+                        <h5>About the Event</h5>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <br /><br />
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </div>
+                    <div class="eventDetails">
+                        <p>Have a question for the organizer?</p>
+                        <p>Check the <a href="javascript:void(0)">Contact page</a> for more information or <a href="javascript:void(0)">Contact the organizer.</a></p>
+                    </div>
+                    <div class="shareSocial">
+                        <p>Share with friends</p>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" class="fa fa-facebook" target="_blank"></a>
+                        <a href="https://twitter.com/intent/tweet?url=" class="fa fa-twitter" target="_blank"></a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=your-url-here.com" class="fa fa-linkedin" target="_blank"></a>
+                        <a href="javascript:void(0)" class="fa fa-google"></a>
+
+                    </div>
+                </div>
+
+                <div class="space"></div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="applyEvent();">Apply</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--<script src="https://code.jquery.com/"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="Home.js"></script>
+</body>
+</html>
