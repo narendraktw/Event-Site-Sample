@@ -1,0 +1,20 @@
+{
+  "name": "evenapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narendraktw/Event-Site-Sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narendraktw/Event-Site-Sample/issues"
+  },
+  "homepage": "https://github.com/narendraktw/Event-Site-Sample#readme"
+}
